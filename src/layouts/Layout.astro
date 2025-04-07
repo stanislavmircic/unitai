@@ -1,0 +1,47 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+const currentPath = Astro.url.pathname;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title} - AI Surveillance Solutions</title>
+  </head>
+  <body class="min-h-screen bg-white">
+    <nav class="bg-white shadow-sm">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <div class="flex">
+            <div class="flex-shrink-0 flex items-center">
+              <span class="text-2xl font-bold text-accent">SecureVision AI</span>
+            </div>
+            <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+              <a href="/" class={`${currentPath === '/' ? 'text-gray-900 border-accent' : 'text-gray-500 border-transparent hover:text-gray-900'} inline-flex items-center px-1 pt-1 border-b-2`}>Home</a>
+              <a href="/products" class={`${currentPath === '/products' ? 'text-gray-900 border-accent' : 'text-gray-500 border-transparent hover:text-gray-900'} inline-flex items-center px-1 pt-1 border-b-2`}>Products</a>
+              <a href="/contact" class={`${currentPath === '/contact' ? 'text-gray-900 border-accent' : 'text-gray-500 border-transparent hover:text-gray-900'} inline-flex items-center px-1 pt-1 border-b-2`}>Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <slot />
+
+    <footer class="bg-gray-50 mt-20">
+      <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <p class="text-gray-500">&copy; 2025 SecureVision AI. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
