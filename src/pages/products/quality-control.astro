@@ -2,45 +2,61 @@
 import Layout from '../../layouts/Layout.astro';
 ---
 
-<Layout title="Quality Control AI">
+<Layout title="AI Kontrola Kvaliteta">
   <main class="max-w-4xl mx-auto px-4 py-12">
     <div class="relative h-[300px] rounded-xl overflow-hidden mb-8">
       <img 
-        src="https://images.unsplash.com/photo-1563770660941-671c31e44517?w=1600" 
-        alt="Quality Control" 
+        src="https://www.ripik.ai/wp-content/uploads/2024/07/Anomaly-Detection_1-1024x576.png" 
+        alt="Kontrola Kvaliteta" 
         class="w-full h-full object-cover"
       />
       <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-        <h1 class="text-4xl font-bold text-white">Quality Control AI</h1>
+        <h1 class="text-4xl font-bold text-white">AI Kontrola Kvaliteta</h1>
       </div>
     </div>
 
     <div class="prose lg:prose-xl">
-      <h2>AI-Powered Quality Inspection</h2>
-      <p>Our Quality Control AI system revolutionizes manufacturing quality assurance through real-time monitoring and defect detection.</p>
+      <h2>AI-Kontrola Kvaliteta</h2>
+      <p>Naš sistem AI Kontrole Kvaliteta revolucionarno menja osiguranje kvaliteta u proizvodnji kroz praćenje i detekciju defekata u realnom vremenu.</p>
 
-      <h2>System Capabilities</h2>
-      <ul>
-        <li>Real-time defect detection</li>
-        <li>Automated quality grading</li>
-        <li>Production line monitoring</li>
-        <li>Detailed analytics and reporting</li>
-        <li>Integration with MES systems</li>
-      </ul>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-8">
+        <div class="flex flex-col justify-center">
+          <h3 class="text-xl font-semibold mb-4">Automatizovana Inspekcija Delova</h3>
+          <p class="text-gray-600">
+            Naš napredni AI sistem prati svaki deo na proizvodnoj traci, identifikujući potencijalne defekte i odstupanja od specifikacija u realnom vremenu. Ovo omogućava trenutnu intervenciju i održavanje visokih standarda kvaliteta.
+          </p>
+        </div>
+        <div>
+          <img 
+            src="https://cdn.prod.website-files.com/65c37e39d15be5902352de08/65d6fd53c6b05058a53a62ab_ezgif.com-gif-maker%20(1)%20(2).gif" 
+            alt="AI Inspekcija Delova" 
+            class="rounded-lg shadow-lg w-full"
+          />
+        </div>
 
-      <div class="my-8">
-        <h2>See It In Action</h2>
-        <div class="aspect-w-16 aspect-h-9">
-          <iframe
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-            title="Product Demo"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-            class="w-full h-[400px]"
-          ></iframe>
+        <div>
+          <img 
+            src="https://www.chooch.com/wp-content/uploads/2023/06/ezgif.com-video-to-gif.gif" 
+            alt="Praćenje Inventara" 
+            class="rounded-lg shadow-lg w-full"
+          />
+        </div>
+        <div class="flex flex-col justify-center">
+          <h3 class="text-xl font-semibold mb-4">Inteligentno Upravljanje Inventarom</h3>
+          <p class="text-gray-600">
+            Sistem u realnom vremenu prati kretanje i stanje inventara u skladištu, automatski ažurirajući podatke i optimizujući logističke procese. Ovo značajno smanjuje greške u praćenju i poboljšava efikasnost upravljanja zalihama.
+          </p>
         </div>
       </div>
+
+      <h2>Mogućnosti Sistema</h2>
+      <ul>
+        <li>Detekcija defekata u realnom vremenu</li>
+        <li>Automatizovano ocenjivanje kvaliteta</li>
+        <li>Praćenje proizvodne linije</li>
+        <li>Detaljne analize i izveštavanje</li>
+        <li>Integracija sa MES sistemima</li>
+      </ul>
     </div>
   </main>
 </Layout>
